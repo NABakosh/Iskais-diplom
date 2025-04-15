@@ -1,0 +1,34 @@
+.header{
+    padding-bottom: 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        P{line-height: 1.1;}
+    }
+}
+input{
+    width: 560px;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 8px;
+}
+button{
+    width: 70px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    background-color: #4F6699;
+    border: none;
+}
