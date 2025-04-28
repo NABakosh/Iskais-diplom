@@ -1,0 +1,101 @@
+.book {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	main {
+		margin-top: 50px;
+
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+	}
+}
+.book-center {
+	width: 1000px;
+	max-width: 1000px;
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		h3 {
+			font-size: 24px;
+			font-weight: 500;
+		}
+	}
+}
+.book_info {
+	display: flex;
+	flex-direction: column;
+	margin-left: -40px;
+}
+.book_info_static {
+	width: 210px;
+	padding: 5px 30px 5px 10px; // Заменяем padding для отступов
+	display: flex;
+	align-items: flex-start; // Чтобы текст рос вниз
+	gap: 5px; // Небольшой отступ между лейблом и <p>
+
+	p {
+		flex: 1; // Займёт оставшееся пространство
+		background-color: #b9c7e8;
+		word-break: break-word; // Чтобы длинные слова не вылезали
+	}
+	&.active {
+		background-color: #b9c7e8;
+	}
+}
+
+.book_buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	button {
+		width: 130px;
+		height: 34px;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			scale: (1.1);
+		}
+	}
+}
+.other_books {
+	padding: 10px 20px;
+	width: 178px;
+	height: auto;
+	left: 1024px;
+	top: 136px;
+	background: #f2f2f2;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	div {
+		padding-top: 20px;
+		width: 80%;
+		height: auto;
+		text-align: center;
+		&.this_books {
+			width: auto;
+			padding-bottom: 30px;
+			border-bottom: 1px solid rgb(197, 197, 197);
+		}
+		&.other_dis_books {
+			padding-bottom: 20px;
+		}
+		P {
+			font-size: 15px;
+			font-weight: 500;
+			padding-bottom: 5px;
+		}
+		li {
+			text-decoration: none;
+			color: black;
+			list-style: none;
+		}
+	}
+}

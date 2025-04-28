@@ -1,34 +1,103 @@
-.header{
-    padding-bottom: 60px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+.header {
+	padding-bottom: 60px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 90px;
-    div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        P{line-height: 1.1;}
-    }
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 90px;
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		P {
+			line-height: 1.1;
+			color: black;
+		}
+	}
 }
-input{
-    width: 560px;
-    height: 30px;
-    border:1px solid black;
-    border-radius: 8px;
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
-button{
-    width: 70px;
-    height: 30px;
-    color: white;
-    border-radius: 5px;
-    background-color: #4F6699;
-    border: none;
+input {
+	padding-left: 5px;
+	width: 560px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+button {
+	width: 70px;
+	height: 30px;
+	color: white;
+	border-radius: 5px;
+	background-color: #4f6699;
+	border: none;
+}
+.active_user {
+	cursor: pointer;
+	position: relative;
+}
+.user-dropdown {
+	padding: 7px 15px;
+	border-radius: 6px;
+	position: absolute;
+	top: 80px;
+	color: white;
+	background-color: #4f6699;
+	transform: translateY(-20px);
+	transition: 0.2s;
+	opacity: 0;
+	pointer-events: none;
+}
+.user-dropdown-active {
+	pointer-events: all;
+	opacity: 1;
+	cursor: pointer;
+	transform: translateY(00px);
+}
+.header-dropdown {
+	padding: 10px 15px 5px;
+	position: absolute;
+	top: 40px;
+	z-index: 3;
+	opacity: 0;
+	transition: 0.2s;
+	transform: translateY(-20px);
+	background-color: #4f6699;
+	border-radius: 10px;
+	&.active {
+		opacity: 1;
+		transform: translateY(-0px);
+	}
+	p {
+		position: relative;
+		z-index: 2;
+	}
+}
+.search-dropdown {
+	padding: 5px 10px;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	background-color: #e4e4e4;
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+	li {
+		text-decoration: none;
+		list-style: none;
+		color: black;
+	}
+}
+.search-container {
+	position: relative;
 }

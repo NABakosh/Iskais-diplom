@@ -1,0 +1,24 @@
+.error1 {
+	width: 100%;
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: black !important;
+	main {
+	}
+	span {
+		font-size: 80px;
+		line-height: 0.4;
+	}
+	p {
+		font-size: 25px;
+	}
+	button {
+		margin-top: 10px;
+		width: auto;
+		height: auto;
+		padding: 10px 15px;
+	}
+}

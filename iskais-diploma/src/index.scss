@@ -1,5 +1,31 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+	font-family: 'YourFont';
+	src: url('/fonts/TTCommons-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YourFont';
+	src: url('/fonts/TTCommons-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YourFont';
+	src: url('/fonts/TTCommons-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	font-family: 'YourFont';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 30px;
+	font-weight: 500;
 }

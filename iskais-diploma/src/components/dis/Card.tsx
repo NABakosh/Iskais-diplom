@@ -1,11 +1,11 @@
-import "./scss/card.scss"
-const Card = ({text,alt,url,i}) => {
-    return(
-        <div className={`dis-card  dis-card-${i}`}>
-                    <img src={url} alt={alt} width={100} />
-                    <p>{text}</p>
-                </div>
-    )
+import './scss/card.scss'
+const Card = ({ text, url, id }) => {
+	return (
+		<div className={`dis-card  dis-card-${id}`}>
+			<img src={'http://localhost:5001' + url} alt={text} width={100} />
+			<p>{text}</p>
+		</div>
+	)
 }
 
 export default Card

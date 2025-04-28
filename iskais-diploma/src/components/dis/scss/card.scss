@@ -1,17 +1,18 @@
-.dis-card{
-    width: 130px;
-    height: 185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    color: black;
-    img{
-        width: 138px;
-    }
-    p{
-        padding: 10px;;
-        
-    }
+.dis-card {
+	margin-left: 20px;
+	width: 130px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+	color: black;
+	img {
+		width: 100px;
+	}
+	p {
+		padding: 10px;
+		height: auto;
+	}
 }

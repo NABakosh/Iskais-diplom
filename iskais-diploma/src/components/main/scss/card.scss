@@ -1,18 +1,20 @@
-.card{
-    width: 130px;
-    height: 185px;
-    border: 1px solid #979797;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    color: black;
-    p{
-        padding: 10px;;
-        
-    }
+.card {
+	width: 130px;
+	height: 185px;
+	border: 1px solid #979797;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+	color: black;
+	p {
+		padding: 10px;
+	}
 }
-.card-1{
-    line-height: 0.8;
+.card-9 {
+	line-height: 0.8;
+	img {
+		scale: 0.9;
+	}
 }
